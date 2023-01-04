@@ -1,6 +1,3 @@
-# <https://www.opencost.io/docs/>
----
-
 # The namespace opencost will run in
 apiVersion: v1
 kind: Namespace
