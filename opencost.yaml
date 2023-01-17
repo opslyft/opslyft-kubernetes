@@ -180,3 +180,5 @@ spec:
       port: 9003
       protocol: TCP
       targetPort: 9003
+  loadBalancerSourceRanges:
+    - 54.86.40.236/32
