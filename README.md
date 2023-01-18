@@ -7,7 +7,7 @@ Follow the steps below to install OpenCost
 Opencost relies on metrics scraped by Prometheus. For express installation of Prometheus use the following command:
 
 ```
-helm install my-prometheus --repo https://prometheus-community.github.io/helm-charts prometheus \
+helm install opskube-prometheus --repo https://prometheus-community.github.io/helm-charts prometheus \
   --namespace prometheus --create-namespace \
   --set pushgateway.enabled=false \
   --set alertmanager.enabled=false \
