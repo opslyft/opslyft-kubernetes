@@ -17,11 +17,15 @@ This Prometheus installation is based on Prom community helm chart, and by defau
 
 ## Step 2: Installing OpenCost
 
-To install OpenCost on your cluster, you need to replace <your-cluster-name> with your actual Kubernetes cluster name in the command below before running it:
+To install OpenCost on your cluster, you need to replace `<your-cluster-name>` with your actual Kubernetes cluster name in the command below before running it:
 
 ```
 curl -s https://raw.githubusercontent.com/opslyft/opslyft-kubernetes/main/opencost.yaml | sed 's/cluster-one/<your-cluster-name>/g' | kubectl apply --namespace opencost -f -
 ```
+
+This command fetches the OpenCost YAML configuration, replaces the CLUSTER_ID value with your cluster name, and applies the configuration to your Kubernetes cluster.
+
+Make sure to replace <your-cluster-name> with the name of your Kubernetes cluster.
 
 ## Testing
 
